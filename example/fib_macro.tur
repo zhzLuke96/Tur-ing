@@ -1,0 +1,24 @@
+/**
+ * author : zhzluke96 (sanshi) - github
+ * mail   : zhz961101@gmail.com
+ * date   : 18/08/18
+ */
+Fibonacci{
+    >+? >+?                 // init [?,1,1];
+    <<[
+        >[>+>+<<-]          // stack[1]->stack[2;3];
+        >?                  // print stack[2];
+        >[-<<+>>]<<         // stack[3]->stack[1];
+        >[<+>>+<-]          // stack[2]->stack[1;3];
+        >[-<+>]<            // stack[3]->stack[2];
+        <?                  // print stack[3];
+        <-
+    ]
+    >[-]>[-]>[-]<<<         // garbage collection
+}
+
+main{
+    ;(Fibonacci)            // input Number(opt;)
+}
+
+(main)
