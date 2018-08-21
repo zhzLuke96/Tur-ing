@@ -1,0 +1,24 @@
+/**
+ * author : zhzluke96 (sanshi) - github
+ * mail   : zhz961101@gmail.com
+ * date   : 18/08/20
+ */
+
+mul5{[>+<-]>[<+++++>-]<}
+
+ten{++++++++++}
+fift{(ten)(mul5)}
+
+// (fift)? // test
+
+tip{(fift)(ten)++..[-]}
+
+Prompt{
+    (tip)
+}
+
+main{
+    (Prompt)            // print >>
+}
+
+(main)
