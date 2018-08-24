@@ -9,7 +9,7 @@ def setCONSOLE(title):
 
 
 class tur:
-    def __init__(self, bias=0, gap="" ,debug=False):
+    def __init__(self, bias=0, gap="", debug=False):
         self.init(bias, gap, debug)
 
     def init(self, bias, gap, debug):
@@ -20,7 +20,8 @@ class tur:
         self.macro = dict()
 
     def title(self):
-        setCONSOLE(self.variable.this)
+        setCONSOLE(
+            f"{self.variable.cursor}  {self.variable.this[self.variable.cursor]}  {self.variable.this}")
 
     def run(self, code):
         return self.eval(self.parser(self.lexer(code)))

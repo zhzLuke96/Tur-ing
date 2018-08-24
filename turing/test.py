@@ -11,6 +11,7 @@ def execTur(code, t):
 
 # python test.py ../example/math.tur debug
 
+
 if len(sys.argv) > 1:
     D = len(sys.argv) is 3
     turm = tur(gap="", debug=D)

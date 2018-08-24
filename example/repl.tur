@@ -1,24 +1,37 @@
 /**
  * author : zhzluke96 (sanshi) - github
  * mail   : zhz961101@gmail.com
- * date   : 18/08/20
+ * date   : 18/08/24
  */
 
 mul5{[>+<-]>[<+++++>-]<}
+mul3{[>+<-]>[<+++>-]<}
 
 ten{++++++++++}
+thirt{(ten)(mul3)}
 fift{(ten)(mul5)}
 
 // (fift)? // test
 
 tip{(fift)(ten)++..[-]}
 
+newline{(ten).[-]}
+space{(thirt)++.[-]}
+
 Prompt{
-    (tip)
+    >
+    (newline)
+    (tip)(space)                // print >>
+    <
+}
+
+readInput{
+    >+[+++++++++++++++++++++++++++++++++++.>(Prompt),-----------------------------------]<[<]>>[.>]
 }
 
 main{
-    (Prompt)            // print >>
+    // +[>(Prompt)<,.]
+    (readInput)
 }
 
 (main)

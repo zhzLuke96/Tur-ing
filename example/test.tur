@@ -4,3 +4,7 @@
 
 // 条件指令
 // ,----------[----------------------.,----------]
+
+// https://stackoverflow.com/questions/24857286/making-an-ifx-y-statement-in-brainfuck
+// If you want to use a different ASCII character, such as space (32), repeat the + and - within the first loop that many times. (Warning: this code will result in values below 0 if there are any characters less than 32 in your input).
+// >+[++++++++++++++++++++++++++++++++>,--------------------------------]<[<]>>[.>]

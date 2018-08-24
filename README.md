@@ -100,6 +100,10 @@ Turing EOF: [__DEFAULT EOF__]
 Turing [use time]: 4.164583683013916
 ```
 
+# algorithms
+[link](https://esolangs.org/wiki/Brainfuck_algorithms)
+
+
 # Tips
 > js文件夹主要是摸索着玩的，主要还是python实现
 
